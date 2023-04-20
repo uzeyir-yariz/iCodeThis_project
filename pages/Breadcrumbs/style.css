@@ -1,5 +1,4 @@
 :root {
-  --BGC: #F8F9FD;
   --BGC_box: #FFFFFF;
 }
 
@@ -15,31 +14,30 @@ h1, h2, h3, h4, h5, h6, a {
   text-decoration: none;
 }
 
-body {
-  background-color: var(--BGC);
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-body main {
+main section {
   background-color: var(--BGC_box);
   padding: 3rem;
   box-shadow: 2px 2px 50px 2px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   width: 750px;
 }
-body main article div {
+main section article div {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   gap: 25px;
 }
-body main article div .list {
+main section article div .list {
   display: flex;
   gap: 32px;
 }
-body main article div .front {
+main section article div .front {
   border-bottom: solid 1px rgba(0, 0, 0, 0.3);
   border-top: solid 1px rgba(0, 0, 0, 0.3);
   padding-top: 20px;

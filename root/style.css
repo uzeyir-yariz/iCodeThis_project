@@ -1,0 +1,47 @@
+:root{
+    --back_color: #3D1FA6;
+    
+    --box_color1: #4F22F2;
+    --box_color2: #1c2431;
+    --box_color3: #151b29;    
+
+    
+    --alt_color1: #643DF2;
+    --alt_color2: #6451ce;
+    --alt_color3: #30324d;
+
+    --text_color1: #b3edfb;
+    --text_color2: #C7BBF2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{background-color: var(--back_color); height: 100vh;}
+
+#nav{display: flex;flex-direction: row;align-items: center;width: 100%;justify-content: space-between;padding: 0.5rem;background-color: var(--alt_color1);}
+#nav > ul{list-style: none;display: flex;gap: 32px;}
+#nav > * a{transition: 500ms;font-family: 'Anuphan', sans-serif; text-transform: uppercase;text-decoration: none;color: var(--text_color2);border-radius: 7px;padding: 3px;border-bottom: solid var(--alt_color) 3px;} #nav > * a:hover{border-bottom: solid var(--text_color2) 3px;color: var(--text_color1);}
+
+footer *{font-family: 'Anuphan', sans-serif; font-weight: 600;text-decoration: none;color: var(--text_color2);}
+
+/* footer first */
+#footer_first{display: flex;justify-content: space-between;padding: 1rem;background-color: var(--alt_color2);}
+#footer_first > span{display: flex;gap: 15px;}
+#footer_first > span > a > i{font-size: 22px;transition: 500ms;color: var(--text_color1);}#footer_first > span > a > i:hover{color: var(--text_color2);}
+/* footer two */
+#footer_two{display: grid;grid-template-columns: 1fr 1fr 1fr;padding: 1rem;background-color: var(--box_color2);justify-items: center;align-items: baseline;}
+#footer_two > span{width: 70%;display: flex;flex-direction: column;}
+#footer_two > span > h3{margin-bottom: 5px; color: var(--text_color2);}
+#footer_two > span > hr{margin-bottom: 30px; width: 30%; opacity: 0.5;}
+#footer_two > span > ul{list-style: none;display: flex;flex-direction: column;gap: 15px;}
+#footer_two > span > ul > li > a{transition: 500ms;font-family: 'Anuphan', sans-serif; text-decoration: none;color: var(--text_color2);padding: 3px;}#footer_two > span > ul > li > a:hover{color: var(--text_color1);}
+/* footer third */
+#footer_third{display: flex;justify-content: center;padding: 0.7rem;background-color: var(--box_color3);}
+#footer_third > p > a{transition: 500ms;font-family: 'Anuphan', sans-serif; text-decoration: none;color: var(--text_color1);padding: 3px;}#footer_third >  p > a:hover{color: var(--text_color2);}

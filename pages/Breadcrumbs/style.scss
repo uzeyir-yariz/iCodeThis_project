@@ -15,14 +15,13 @@ h1,h2,h3,h4,h5,h6,a{
     text-decoration: none;
 }
 
-body{
+main{
     background-color: var(--BGC);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 
-    main{
+    section{
         background-color: var(--BGC_box);
         padding: 3rem;
         box-shadow: 2px 2px 50px 2px rgba(0,0,0,0.5);
