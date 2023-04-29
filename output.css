@@ -34,7 +34,9 @@ h1, h2, h3, a, p {
   color: var(--text_color2);
   text-decoration: none;
 }
-
+body{
+  height: 100vh;
+}
 main section h1 {
   text-align: center;
   font-size: 40px;

@@ -29,6 +29,7 @@ body{background-color: var(--back_color); height: 100vh;}
 #nav > ul{list-style: none;display: flex;gap: 32px;}
 #nav > * a{transition: 500ms;font-family: 'Anuphan', sans-serif; text-transform: uppercase;text-decoration: none;color: var(--text_color2);border-radius: 7px;padding: 3px;border-bottom: solid var(--alt_color) 3px;} #nav > * a:hover{border-bottom: solid var(--text_color2) 3px;color: var(--text_color1);}
 
+footer{position: absolute; bottom: 0; width: 100%;}
 footer *{font-family: 'Anuphan', sans-serif; font-weight: 600;text-decoration: none;color: var(--text_color2);}
 
 /* footer first */
