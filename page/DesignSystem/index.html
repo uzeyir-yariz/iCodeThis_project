@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/8fdc27e80b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/root/script.js"></script>
+    <title>draft</title>
+</head>
+<body class="bg-purple-400">
+    <nav id="nav"></nav>
+    
+    <main class="h-screen flex justify-center place-items-center">
+        <article class="bg-white grid grid-cols-2 grid-rows-2 p-20">
+            <div class="flex flex-col gap-4">
+                <!-- defauld -->
+                <div class="flex gap-4 items-center text-center">
+                    <a class="bg-blue-400 w-24 text-white p-2 rounded-sm hover:bg-blue-600 duration-500" href="#">Primary</a>
+                    <a class="bg-blue-400 w-24 text-white p-2 rounded-sm hover:bg-blue-600 duration-500" href="#">Primary</a>
+                    <p class="opacity-50 italic uppercase">default</p>
+                </div>
+                <!-- hover -->
+                <div class="flex gap-4 items-center text-center">
+                    <a class="bg-blue-600 text-white p-2 rounded-sm hover:bg-blue-400 w-24 duration-500" href="#">Primary</a>
+                    <a class="bg-blue-600 text-white p-2 rounded-sm hover:bg-blue-400 w-24 duration-500" href="#">Primary</a>
+                    <p class="opacity-50 italic uppercase">hover</p>
+                </div>
+                <!-- disabled -->
+                <div class="flex gap-4 items-center text-center">
+                    <a class="bg-slate-500 opacity-60 w-24 text-white p-2 rounded-sm cursor-not-allowed duration-500" href="#">Primary</a>
+                    <a class="bg-slate-500 opacity-60 w-24 text-white p-2 rounded-sm cursor-not-allowed duration-500" href="#">Primary</a>
+                    <p class="opacity-50 italic uppercase">disabled</p>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col gap-4">
+                <!-- defauld -->
+                <div class="flex gap-4 items-center text-center">
+                    <a class="w-24 text-blue-600 p-2 rounded-sm border border-blue-400  duration-500" href="#">Primary</a>
+                    <a class="w-24 text-blue-600 p-2 rounded-sm border border-blue-400  duration-500" href="#">Primary</a>
+                    <p class="opacity-50 italic uppercase">default</p>
+                </div>
+                <!-- hover -->
+                <div class="flex gap-4 items-center text-center">
+                    <a class="text-blue-600 p-2 rounded-sm w-24 border border-blue-400 duration-500" href="#">Primary</a>
+                    <a class="text-blue-600 p-2 rounded-sm w-24 border border-blue-400 duration-500" href="#">Primary</a>
+                    <p class="opacity-50 italic uppercase">hover</p>
+                </div>
+                <!-- disabled -->
+                <div class="flex gap-4 items-center text-center">
+                    <a class="opacity-60 w-24 text-blue-600 p-2 rounded-sm cursor-not-allowed border border-blue-400 duration-500" href="#">Primary</a>
+                    <a class="opacity-60 w-24 text-blue-600 p-2 rounded-sm cursor-not-allowed border border-blue-400 duration-500" href="#">Primary</a>
+                    <p class="opacity-50 italic uppercase">disabled</p>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="text-2xl mb-4">Page header</h1>
+                <h2 class="mb-4">Section header</h2>
+                <p class="mb-4 w-56 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga commodi earum quasi odio repellendus repudiandae. <br> <a class="underline text-blue-800" href="www.example.com">link example</a></p>
+                <p class="w-56 text-sm opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="text-sm underline text-blue-800">Hovered link example</a> 
+            </div>
+
+            <div>
+                <div class="mb-8">
+                    <h1 class="uppercase opacity-50">badges</h1>
+                    <span class="text-white">
+                        <a class="rounded-full bg-blue-500 pt-1 pb-1 pl-2 pr-2"     href="#">default  <span class="ml-2" >4</span></a>
+                        <a class="rounded-full bg-green-500 pt-1 pb-1 pl-2 pr-2"    href="#">positive <span class="ml-2" >2</span></a>
+                        <a class="rounded-full bg-red-600 pt-1 pb-1 pl-2 pr-2"      href="#">negative <span class="ml-2" >9</span></a>
+                    </span>
+                </div>
+                <div>
+                    <h1 class="uppercase opacity-50">card</h1>
+                    <div class="flex flex-col gap-8">
+                        <h1 class="relative flex items-center text-2xl">Card title <i class="hover:text-yellow-400 cursor-pointer duration-500 absolute right-0 text-slate-400 fa-solid fa-star"></i></h1>
+                        <p class="w-80 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A corporis cumque fugit consequuntur alias nostrum!</p>
+                        <a class="text-sm underline text-blue-800" href="#">Link</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+<script src="script.js"></script>
+</html>

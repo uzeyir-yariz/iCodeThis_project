@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/8fdc27e80b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/root/script.js"></script>
+    <title>Share Modal</title>
+</head>
+<body class="bg-purple-400">
+    <nav id="nav"></nav>
+    
+    
+    <main id="main" class="bg-slate-500 h-screen flex place-items-center justify-center">
+        <div class="shadow-lg shadow-black bg-white rounded-lg p-16 text-center items-center flex flex-col">
+            <div class="flex w-full justify-end mb-8 opacity-50">
+                <i onclick="destroy_div()" class="cursor-pointer fa-solid fa-x"></i>
+            </div>
+            <h1 class="font-bold text-2xl mb-2">Share this article</h1>
+            <p class="w-3/4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, necessitatibus.</p>
+            <span class="text-white mt-4 mb-4 text-2xl grid grid-cols-3 gap-8 w-full">
+                <span class="w-full bg-blue-600 rounded-lg p-2"><i class="mr-4 fa-brands fa-facebook"></i>facebook</span>
+
+                <span class="w-full bg-blue-500 rounded-lg p-2"><i class="mr-4 fa-brands fa-twitter"></i>twiter</span>
+
+                <span class="w-full bg-black rounded-lg p-2"><i class="mr-4 fa-brands fa-reddit"></i>reddit</span>
+            </span>
+            <h1 class="mb-4 mt-4"><strong>4,5K</strong> Shares</h1>
+            <button class="mt-8 text-orange-600 cursor-pointer" onclick="destroy_div()">close this window</button>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+<script src="script.js"></script>
+</html>
