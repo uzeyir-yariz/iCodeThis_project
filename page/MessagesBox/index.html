@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/8fdc27e80b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/root/script.js"></script>
+    <title>draft</title>
+</head>
+<body class="bg-purple-400">
+    <nav id="nav"></nav>
+    
+    <main class="h-screen flex flex-col justify-center place-items-center">
+        <div class="rounded bg-white p-4 relative shadow-lg shadow-black">
+            <h1 class="mb-2 text-3xl">Mesage</h1>
+            <hr class="mb-2 border border-blue-500 opacity-50">
+            <div class="items-center flex bg-slate-100 p-2 gap-4 rounded">
+                <i class="cursor-pointer text-blue-600 fa-solid fa-magnifying-glass"></i>
+                <input class="bg-slate-100 w-full h-full border-none focus:outline-none text-blue-600" type="text">
+            </div>
+    
+            <div class="flex flex-col gap-8">
+                <span class="flex items-center gap-4">
+                        <i class="text-3xl text-blue-700 fa-solid fa-user"></i>
+                        <span>
+                            <h3 class="font-bold">tester01</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </span>
+                </span>
+    
+                <span class="flex items-center gap-4">
+                        <i class="text-3xl text-blue-700 fa-solid fa-user"></i>
+                        <span>
+                            <h3 class="font-bold">tester02</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Natus, ducimus?</p>
+                        </span>
+                </span>
+    
+                <span class="flex items-center gap-4">
+                        <i class="text-3xl text-blue-700 fa-solid fa-user"></i>
+                        <span>
+                            <h3 class="font-bold">tester03</h3>
+                            <p>Lorem ipsum</p>
+                        </span>
+                </span>
+                <i class="absolute text-blue-600 text-4xl fa-solid fa-feather bottom-4 right-4 cursor-pointer hover:text-blue-900 duration-500"></i>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+<script src="script.js"></script>
+</html>
