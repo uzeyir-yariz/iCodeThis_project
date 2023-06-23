@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/8fdc27e80b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/root/script.js"></script>
+    <title>draft</title>
+</head>
+<body class="bg-purple-400 select-none">
+    <nav id="nav"></nav>
+    
+    <main class="place-items-center justify-center items-center flex h-screen">
+        <div class="py-8 px-4 bg-white rounded w-80">
+
+            <!-- * burası mesajların olduğu bölge -->
+            <div class="flex items-center justify-between">
+                <!-- burası sol taraf -->
+                <span id="icons" class="text-3xl shadow-xl p-2 rounded flex gap-8">
+                    <span class="flex relative">
+                        <i class="text-slate-500 fa-regular fa-envelope"></i>
+                        <p class="center-content -right-3 -top-2 text-white text-sm absolute bg-yellow-500 border-white border-2 rounded-full w-6 text-center h-6" id="mail">2</p>
+                    </span>
+                    <span class="flex relative">
+                        <i class="text-slate-500 fa-regular fa-bell"></i>
+                        <p class="center-content -right-3 -top-2 text-white text-sm absolute bg-yellow-500 border-white border-2 rounded-full w-6 text-center h-6" id="Notifications">3</p>
+                    </span>
+                </span>
+
+                <!-- burası sağ taraf olacak -->
+                <span class="text-3xl">
+                    <i class="text-green-400 fa-solid fa-plus"></i>
+                </span>
+            </div>
+
+            <!-- * orta kısım bölüm -->
+            <div class="mt-8">
+                <!-- * bu kısım tam olarak yazıların olduğu yer like ve diğer kısımlar ise aşşağu kısımda olacak -->
+                <span class="flex items-center gap-4">
+                    <img src="https://picsum.photos/200/300" class="rounded-full w-24 aspect-square object-cover" alt="random_picsum">
+                    <div>
+                        <h1 class="text-green-600">Aperture</h1>
+                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla, magnam voluptates quas vero saepe?</p>
+                    </div>
+                </span>
+
+                <!-- * burası like ve post kısmınının olacağı yer -->
+                <span class="flex justify-around mt-8 text-center">
+                    <div class="">
+                        <h2 class="text-slate-500 uppercase">Likes</h2>
+                        <p class="text-2xl text-green-600">0451</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-slate-500 uppercase">post</h2>
+                        <p class="text-2xl text-green-600">0042</p>
+                    </div>
+                </span>
+
+                <!-- * bursı çarpıya basılınca yok olacak alan -->
+                <span id="destroy" class="justify-center flex flex-col gap-4">
+                    <span class="rounded relative shadow-md flex p-2 text-slate-500 text-sm">
+                        <p class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, natus!</p>
+                        <i class="bom absolute top-5 opacity-70 right-2 cursor-pointer fa-solid fa-x"></i>
+                    </span>
+                    <button class="bom rounded shadow-md text-green-600 py-1 hover:text-green-800 duration-500 hover:shadow-xl">Update Profil</button>
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+<script src="script.js"></script>
+</html>
