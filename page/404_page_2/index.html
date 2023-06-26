@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/8fdc27e80b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/root/script.js"></script>
+    <title>draft</title>
+    <style>
+        .cont{
+            animation: color_changed 5s ease-in-out infinite;
+        } @keyframes color_changed{
+            0%{
+                background-color: #00c85380;
+            } 20%{
+                background-color: #00C85380;
+            } 40%{
+                background-color: #00BFA580;
+            } 60%{
+                background-color: #00BFA580;
+            } 80%{
+                background-color: #00C85380;
+            } 100%{
+                background-color: #00C85380;
+            }
+        }
+    </style>
+</head>
+<body class="bg-purple-400">
+    <nav id="nav"></nav>
+    
+    <!-- todo: küreler dönerek aşşağı düşmeli -->
+
+    <main class="h-screen flex justify-center items-center ">
+        <div id="cont" class="cont rounded  w-96 h-auto py-4">
+            <div class="relative uppercase text-white flex flex-col w-full text-center items-center justify-center p-2" id="text">
+                <button class="hover:rotate-90 duration-500 absolute top-0 right-4"><i class="text-3xl fas fa-times"></i></button>
+                <p class="mt-8 text-sm">tea</p>
+                <h1 class="font-mono text-8xl">404</h1>
+                <p class="normal-case mx-16 mt-2">The link you clicked may be broken or the page may have been removed</p>
+                <p class="mb-40 normal-case mt-8">
+                    visit the 
+                    <a class="underline text-purple-700 font-bold hover:text-xl duration-500 hover:text-white" href="#">home page</a> 
+                    or 
+                    <a class="underline text-purple-700 font-bold hover:text-xl duration-500 hover:text-white" href="#">contact</a> 
+                    me
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+<script src="script.js"></script>
+</html>

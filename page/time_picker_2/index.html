@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/8fdc27e80b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/root/script.js"></script>
+    <title>draft</title>
+</head>
+<body class="bg-purple-400">
+    <nav id="nav"></nav>
+    
+    <main class="h-screen flex justify-center items-center ">
+        <div class="flex gap-4">
+            <div class="text-blue-200 text-5xl">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div class="bg-white py-2 px-4 rounded flex-col flex items-center gap-4">
+                <h1 class="font-bold uppercase bg-orange-500 px-4 py-1 rounded flex text-white">select time</h1>
+                <span>
+                    <select name="ver_hour" id="ver_hour">
+                        <!-- JS bölümünde -->
+                    </select>
+
+                    <select name="dk" id="dk">
+                        <!-- JS bölümünde -->
+                    </select>
+
+                    <select name="select" id="select">
+                        <option value="am">am</option>
+                        <option value="pm">pm</option>
+                    </select>
+                </span>
+                <input id="convert" type="button" value="24 hour ver" class="cursor-pointer bg-purple-600 w-full mt-4 py-1 rounded text-green-200 font-bold">
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+<script src="script.js"></script>
+</html>
