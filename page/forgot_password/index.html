@@ -9,14 +9,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/root/script.js"></script>
     <title>draft</title>
+    <style>
+        .smal_text{
+            font-size: 70%;
+        }
+    </style>
 </head>
 <body class="bg-purple-400">
     <nav id="nav"></nav>
     
-    <!-- todo: küreler dönerek aşşağı düşmeli -->
-
     <main class="h-screen flex justify-center items-center ">
-        
+        <div class="relative py-2 px-4 w-96 bg-white shadow-lg rounde d">
+            <p class="absolute opacity-50 smal_text top-2 right-4">You don't have an account? <a href="" class="text-purple-600 hover:text-purple-900 duration-500 font-bold">Sign up</a></p>
+            <div class="flex mt-16 mb-32 place-items-center justify-center items-center h-full flex-col text-center gap-4">
+                <h1 class="text-2xl">did you forgot your password</h1>
+                <p class="opacity-50 text-sm"> Enter your email address you're using for you acount below and we will send you a password reset link</p>
+
+                <form action="" class="flex flex-col justify-start text-start items-start w-full">
+                    <label class="font-bold" for="email">Email Address : </label>
+                    <input class="w-full outline-none border-2 p-1" type="email"  name="email" id="email">
+                    <input class="rounded bg-slate-600 w-full mt-2 py-2 text-white" type="button" value="Request Reset Link">
+                </form>
+
+                <a class="opacity-50 underline hover:text-purple-500 duration-500" href="">back to sign in</a>
+            </div>
+        </div>
     </main>
 
     <footer id="footer"></footer>
